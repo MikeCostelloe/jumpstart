@@ -1,0 +1,28 @@
+{
+  "name": "jumpstart",
+  "version": "1.0.0",
+  "description": "Base Wordpress build",
+  "author": "Mike Costelloe <mike@mikecostelloe.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "browserify": "^12.0.1",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1",
+    "postcss-cli": "^2.3.2",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/sass/style.scss style.css && node-sass assets/sass/layouts/ -o layouts",
+    "postbuild-css": "postcss --use autoprefixer *.css --replace",
+		"build-vendor": "uglifyjs node_modules/superfish/dist/js/superfish.min.js -o vendor.js",
+    "build-js": "browserify assets/js/index.js > scripts.js",
+    "watch-js": "nodemon -w assets/js -e js -x 'npm run build-js'",
+    "watch-css": "nodemon -w assets/sass -e scss -x 'npm run build-css'",
+    "build": "npm run build-js && npm run build-css",
+    "watch": "npm run watch-js && npm run watch-css"
+  },
+  "dependencies": {
+    "superfish": "^1.7.6"
+  }
+}

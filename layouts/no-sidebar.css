@@ -1,0 +1,33 @@
+/*
+ * Theme Name: jumpstart
+ *
+ * Layout: No-Sidebar
+ * 
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+/* Variables */
+/* --- */
+.single .site-content,
+.page .site-content {
+  background: #fff; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+  position: relative;
+  max-width: 80%;
+  padding: 0 4rem;
+  margin: 0 auto; }
+
+.page-header {
+  margin-top: 1em;
+  margin-bottom: 1em; }

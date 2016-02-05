@@ -1,0 +1,71 @@
+/*
+ * Theme Name: jumpstart
+ *
+ * Layout: Content-Sidebar
+ * 
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+/* Variables */
+/* --- */
+.site-content {
+  padding-bottom: 4em;
+  background: #eee; }
+
+.single .site-content,
+.page .site-content {
+  background: #fff; }
+
+.page-header,
+.paging-navigation {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  list-style-type: none;
+  background: #fff; }
+
+.page-header {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 300px;
+  padding: 4rem;
+  background: #fff; }
+
+.index-box {
+  max-width: 100%;
+  padding: 1em 0 2em;
+  margin: 0 auto 2em;
+  background: #fff; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+@media screen and (min-width: 1100px) {
+  .content-area {
+    width: 100%;
+    float: left;
+    margin: 0 -300px 0 0; }
+  .site-main {
+    margin: 0 300px 0 0; }
+  .entry-header,
+  .entry-content,
+  .entry-meta,
+  .entry-footer,
+  .tag-links,
+  .post-navigation,
+  .comments-area,
+  .paging-navigation {
+    position: relative;
+    max-width: 800px;
+    padding: 0 4rem;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 1099px) {
+  .site-content .widget-area {
+    width: 100%;
+    float: none;
+    margin: 1em auto 0; } }
