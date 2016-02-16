@@ -2,7 +2,7 @@
  * Theme Name: jumpstart
  *
  * Layout: Content-Sidebar
- * 
+ *
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
 
@@ -18,8 +18,8 @@
   background: #eee;
 }
 .single .site-content,
-.page .site-content { 
-  background: #fff; 
+.page .site-content {
+  background: #fff;
 }
 
 .page-header,
@@ -45,10 +45,24 @@
 }
 
 .index-box {
-    max-width: $size__site-main;
+    max-width: $size__site-content;
     padding: 1em 0 2em;
     margin: 0 auto 2em;
     background: #fff;
+}
+
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+		position: relative;
+		max-width: $size__site-content;
+		padding: 0 4rem;
+		margin: 0 auto;
 }
 
 .site-footer {
@@ -57,7 +71,7 @@
 }
 
 @media screen and (min-width: 1100px) {
-	
+
 	.content-area {
 		width: $size__site-main;
 		float: left;
@@ -66,27 +80,12 @@
 	.site-main {
 		margin: 0 $size__site-sidebar 0 0;
 	}
-	
-	.entry-header,
-	.entry-content,
-	.entry-meta,
-	.entry-footer,
-	.tag-links,
-	.post-navigation,
-	.comments-area,
-	.paging-navigation {
-			position: relative;
-			max-width: $size__site-content;
-			padding: 0 4rem;
-			margin: 0 auto;
-	} 
 }
 
-@media screen and (max-width: 1099px) {  
+@media screen and (max-width: 1099px) {
 	.site-content .widget-area {
         width: $size__site-main;
         float: none;
         margin: 1em auto 0;
     }
 }
-
